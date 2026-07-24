@@ -1,14 +1,10 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectHit : MonoBehaviour
 {
-    void Start()
+    private void OnCollisionEnter(Collision other)
     {
-        
-    }
-
-    void Update()
-    {
-        
+        Debug.Log("Something is there!");
     }
 }
